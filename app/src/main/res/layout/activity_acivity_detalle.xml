@@ -36,7 +36,7 @@
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_top16"
         android:text="Maricel Chavela"
 
 
@@ -61,9 +61,12 @@
         android:id="@+id/tv_titulo_edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/margin_container"
+        android:layout_marginTop="@dimen/margin_top16"
+
         android:text="@string/titulo_edad"
+        app:layout_constraintEnd_toStartOf="@+id/direcciones"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
 
@@ -82,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/margin_container"
         android:text="@string/titulo_telefono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDireccion" />
@@ -91,8 +94,8 @@
         android:id="@+id/tvEdad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/margin_container"
+        android:layout_marginTop="@dimen/margin_top8"
         android:text="34 años"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
 
@@ -103,10 +106,12 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:textColor="#000"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/margin_container"
+        android:layout_marginTop="@dimen/margin_top8"
         android:text="test@test.com"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@id/tv_titulo_telefono"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_titulo_email" />
 
@@ -114,8 +119,8 @@
         android:id="@+id/tvDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/margin_top8"
+        android:layout_marginEnd="@dimen/margin_container"
         android:text="En su casa"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +130,7 @@
         android:id="@+id/tvPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margin_top8"
         android:text="56 kilos"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,7 +141,7 @@
         android:id="@+id/tv_titulo_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="@dimen/margin_container"
         android:layout_marginTop="24dp"
         android:text="@string/titulo_email"
 
@@ -147,19 +152,21 @@
         android:id="@+id/direcciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+
+        android:layout_marginTop="@dimen/margin_top16"
+        android:layout_marginEnd="@dimen/margin_container"
         android:text="@string/titulo_direccion"
+
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
 
     <TextView
         android:id="@+id/tvTelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="@dimen/margin_top8"
+        android:layout_marginEnd="@dimen/margin_container"
         android:text="@string/titulo_telefono"
         android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"

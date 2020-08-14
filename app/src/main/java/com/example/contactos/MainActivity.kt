@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             adatador?.removeItem(index)
         }
 
-        fun actualizarContaco(index: Int, nuevoContacto: Contacto) {
+        fun actualizarContacto(index: Int, nuevoContacto: Contacto) {
             adatador?.updateItem(index, nuevoContacto)
         }
     }

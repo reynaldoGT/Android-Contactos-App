@@ -86,7 +86,7 @@ class Nuevo : AppCompatActivity() {
                         .show()
                 } else {
                     if (index > -1) {
-                        MainActivity.actualizarContaco(
+                        MainActivity.actualizarContacto(
                             index, Contacto(
                                 nombre.text.toString(),
                                 apellidos.text.toString(),
