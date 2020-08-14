@@ -76,7 +76,7 @@ class Nuevo : AppCompatActivity() {
                 campos.add(direccion.text.toString())
                 var flag = false
                 for (campo in campos) {
-                    if (campo.isNullOrEmpty()) {
+                    if (campo.isEmpty()) {
                         flag = true
                     }
                 }
@@ -180,12 +180,10 @@ class Nuevo : AppCompatActivity() {
 
         ivFoto.setImageResource(contacto.foto)
 
-        var posicion = 0
-        for(foto in fotos) {
+        for((posicion, foto) in fotos.withIndex()) {
             if (contacto.foto == foto) {
                 fotoIndex = posicion
             }
-            posicion++
         }
 
     }
